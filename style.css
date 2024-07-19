@@ -1,0 +1,80 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+nav{
+  height: 100px;
+  width: 100vw;
+  background-color: rgba(251, 250, 247, 0.668);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0px 3px 5px grey;
+}
+.name{
+  font-size: 32px;
+  text-shadow: 2px 2px 5px;
+}
+.two{
+  color: rgb(114, 158, 197);
+}
+.home,
+.about,
+.projects,
+.contact{
+  font-size: 18px;
+  cursor: pointer;
+}
+.social i{
+  font-size: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+@media (min-width: 800px){
+  .ham,
+  .menu{
+    display: none;
+  }
+}
+@media (max-width: 800px){
+  .home,
+  .about,
+  .contact,
+  .projects,
+  .social{
+    visibility: hidden;
+  }
+  .ham{
+    display: block;
+  }
+}
+
+.ham{
+  font-size: 26px;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.ham:hover{
+  transform: rotate(-90deg);
+}
+.menu{
+  z-index: 10;
+  position: fixed;
+  top: 100px;
+  display: grid;
+  grid-template-columns:  1;
+  grid-template-rows: 4;
+  width: 100vw;
+  background-color: rgba(251, 250, 247, 0.668);
+  display: none;
+}
+.r{
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 0px;
+}
+.r4{
+  padding-bottom: 10px;
+}
